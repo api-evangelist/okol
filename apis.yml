@@ -1,7 +1,23 @@
 aid: okol
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/okol.png
 name: Okol
-description: Okol is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Okol operates propiedades.com, an online real estate marketplace serving
+  Mexico where buyers and renters search residential and commercial property listings
+  and connect with agents, developers, and brokers. Surfaced as a portfolio company
+  of 500 Global and added to the API Evangelist network for enrichment, the company
+  runs its consumer-facing listings platform on AWS but publishes no public developer
+  API, documentation, or specifications at this time.
 url: https://raw.githubusercontent.com/api-evangelist/okol/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,14 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Real Estate
+- Property
+- Marketplace
+- Listings
+- Mexico
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +42,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/okol-domain-security.yml
 - type: Website
   url: https://propiedades.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
